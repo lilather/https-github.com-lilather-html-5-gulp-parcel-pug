@@ -1,0 +1,20 @@
+CACHE MANIFEST
+# Time: Sun Feb 05 2023 19:40:37 GMT-0600 (Central Standard Time)
+
+CACHE:
+dist/index.html
+dist/main.1cbf646b.js
+dist/main.1cbf646b.js.map
+dist/page2.html
+dist/styles.f4e41cb8.css
+dist/styles.f4e41cb8.css.map
+dist/styles.f4e41cb8.js
+dist/styles.f4e41cb8.js.map
+
+NETWORK:
+*
+
+SETTINGS:
+prefer-online
+
+# hash: 6b48d59b2b0428f65f91c29858ffcc8c2f737b97e9e8345dc6f7ca04482021e7

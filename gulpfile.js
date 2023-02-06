@@ -1,12 +1,14 @@
 const { src, dest } = require('gulp');
-const pug = require('gulp-pug');
-
-exports.pug = () => {
-  return src('./src/pug/*.pug')
-    .pipe(
-      pug({
-        // Your options in here.
-      })
-    )
-    .pipe(dest('./src/pages/*html'));
-};
+const gulp = require('gulp');
+const manifest =require('gulp-manifest3')
+gulp.task('manifest', function(){
+    gulp.src(['dist/*'], { base: './' })
+        .pipe(manifest({
+            hash: true,
+            preferOnline: true,
+            network: ['*'],
+            filename: 'app.manifest',
+            exclude: 'app.manifest'
+        }))
+        .pipe(dest('dist'));
+});
